@@ -15,6 +15,8 @@ photos: [
 ]
 ---
 
-<div class="text-center">These are the photos I took, I hope you like them :)</div>
+# Photos
+
+These are the photos I took, I hope you like them :)
 
 <PhotosLayout></PhotosLayout>

@@ -58,7 +58,7 @@ initTags()
       # {{ tag }}
     </span>
   </div>
-  <ul class="space-y-4 " :style="{ paddingLeft: 'unset' }">
+  <ul class="space-y-2 md:space-y-4 " :style="{ paddingLeft: 'unset' }">
     <li v-for="post in posts" :style="{ display: noSelectedTags || isVisible(post.tags) ? 'block' : 'none' }">
       <RouterLink :style="{ color: 'inherit' }" :to="post.path">
         {{ post.title }}

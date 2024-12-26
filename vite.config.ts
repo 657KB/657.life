@@ -87,9 +87,7 @@ export default defineConfig({
       wrapperComponent: id => {
         return id.includes('/posts/') && !id.includes('/posts/index')
           ? 'WrapperPost'
-          : id.includes('/photos')
-            ? 'WrapperPhotos'
-            : 'WrapperDefault'
+          : 'WrapperDefault'
       },
       frontmatterPreprocess: (frontmatter, options, id, defaults) => {
         (() => {

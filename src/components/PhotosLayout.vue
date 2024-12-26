@@ -11,12 +11,8 @@ function resize() {
   const gridWidth = document.querySelector('.masonry')?.getBoundingClientRect().width || 0
   if (screen.availWidth < 400) {
     state.itemWidth = gridWidth
-  } else if (screen.availWidth < 800) {
-    state.itemWidth = (gridWidth - 16 - 10) / 2
-  } else if (screen.availWidth < 1600) {
-    state.itemWidth = (gridWidth - 16 * 2 - 10) / 3
   } else {
-    state.itemWidth = (gridWidth - 16 * 3 - 10) / 4
+    state.itemWidth = (gridWidth - 16 - 10) / 2
   }
 }
 

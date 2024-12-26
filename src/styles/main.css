@@ -52,7 +52,7 @@ html::-webkit-scrollbar-thumb:active {
  * Nprogress style
  */
 #nprogress .bar {
-  background: var(--primary-color);
+  display: none;
 }
 
 #nprogress .spinner-icon {
