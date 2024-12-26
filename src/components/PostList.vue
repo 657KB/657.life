@@ -49,26 +49,22 @@ initTags()
 </script>
 
 <template>
-  <div class=" flex flex-wrap mb-6 ">
-    <span
-      v-for="[tag, selected] in tags.value"
-      :class="` py-1 me-4 border-dashed border border-[transparent] hover:opacity-60 data-[selected=true]:border-[--text-primary] data-[selected=true]:p-1 text-base cursor-pointer select-none rounded `"
+  <div class="flex flex-wrap mb-6">
+    <span v-for="[tag, selected] in tags.value"
+      class="py-1 me-4 border-dashed border border-[transparent] hover:opacity-60 data-[selected=true]:border-[--text-primary] data-[selected=true]:p-1 text-base cursor-pointer select-none rounded"
       :data-selected="selected"
       @click="() => toggleTag(tag)"
     >
       # {{ tag }}
     </span>
   </div>
-  <ul class=" space-y-4 " :style="{ paddingLeft: 'unset' }">
-    <li
-      v-for="post in posts"
-      :style="{ display: noSelectedTags || isVisible(post.tags) ? 'block' : 'none' }"
-    >
+  <ul class="space-y-4 " :style="{ paddingLeft: 'unset' }">
+    <li v-for="post in posts" :style="{ display: noSelectedTags || isVisible(post.tags) ? 'block' : 'none' }">
       <RouterLink :style="{ color: 'inherit' }" :to="post.path">
         {{ post.title }}
       </RouterLink>
       <br class="sm:hidden" />
-      <div class=" inline text-sm text-[#888] font-mono select-none w-fit sm:ms-4 ">
+      <div class="inline text-sm text-[#888] font-mono select-none w-fit sm:ms-4">
         <span>{{ dayjs(post.date).format('DD MMM YYYY') }}</span>
         <span class> / </span>
         <span>{{ post.readingTime }}</span>

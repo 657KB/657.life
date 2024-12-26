@@ -4,8 +4,8 @@ import NavBar from '@/components/NavBar.vue'
 
 <template>
   <NavBar />
-  <main class=" p-6 sm:p-10 mx-auto ">
+  <main class="p-6 sm:p-10 mx-auto">
     <RouterView />
   </main>
-  <div class=" min-h-10 " />
+  <div class="min-h-10 " />
 </template>

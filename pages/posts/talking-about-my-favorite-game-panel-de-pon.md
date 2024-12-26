@@ -24,7 +24,7 @@ Pnael de Pon 是在日本发行时使用的名称，在欧美地区一般使用 
 
 Panel de Pon 的玩法和 [消灭星星](https://baike.baidu.com/item/%E6%B6%88%E7%81%AD%E6%98%9F%E6%98%9F/9963893) 类似，是通过交换两个方块的位置，拼凑出三个或以上在同一行或同一列的相同颜色方块，以达到消除它们的条件，和消灭星星不同的是，Panel de Pon 只支持交换水平位置的方块，并且方块会一行一行不断从下往上增加，玩家必须在方块到达顶部之前通过消除方块达到目标分数才能赢得胜利。
 
-<video class=" max-w-full mx-auto my-12 " width="468" height="352" preload="auto" controls>
+<video class="max-w-full mx-auto my-12 " width="468" height="352" preload="auto" controls>
   <source src="/videos/panel-de-pon-screencast-1.webm" type="video/webm">
 </video>
 
@@ -38,7 +38,7 @@ Panel de Pon 的玩法和 [消灭星星](https://baike.baidu.com/item/%E6%B6%88%
 
 游戏里有一个特别的机制是，在消除方块的时候方块会暂停上升，右侧会出现暂停的指示，此时玩家可以继续移动方块并消除，可以利用消除方块得来的暂停时间继续不断消除，在即将 Game Over 的时候玩家会不自觉紧紧抓住这个救命稻草可以力挽狂澜。我认为这是一个很好的机制，不仅可以一定程度上降低游戏难度，也可以给玩家带来突破死局的成就感。
 
-<video class=" max-w-full mx-auto my-12 " width="468" height="352" preload="auto" controls>
+<video class="max-w-full mx-auto my-12 " width="468" height="352" preload="auto" controls>
   <source src="/videos/panel-de-pon-screencast-2.webm" type="video/webm">
 </video>
 

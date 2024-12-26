@@ -31,19 +31,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <masonry-wall
-    class=" masonry mt-16 "
-    :items="photos"
-    :column-width="state.itemWidth"
-    :min-columns="1"
-    :max-columns="5"
-    :gap="16"
-  >
+  <masonry-wall class="masonry mt-16 " :items="photos" :column-width="state.itemWidth" :min-columns="1" :max-columns="5"
+    :gap="16">
     <template #default="{ item: url }">
-      <PhotoCard
-        :src="`${url}`"
-        :style="{ width: `${state.itemWidth}px` }"
-      />
+      <PhotoCard :src="`${url}`" :style="{ width: `${state.itemWidth}px` }" />
     </template>
   </masonry-wall>
 </template>

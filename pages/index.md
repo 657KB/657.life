@@ -7,7 +7,7 @@ You can contact me by sending an email to kuyermqi@outlook.com. Sometimes I use 
 <div>
   <img
     :style="{ marginTop: `calc(calc(50vh - 7rem) / 3)` }"
-    class=" mx-auto "
+    class="mx-auto "
     width="200"
     src="/images/charliebrown.jpg"
   />

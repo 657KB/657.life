@@ -6,14 +6,11 @@
 
 .markdown-body a {
   color: inherit;
-}
-
-.markdown-body a {
   border-bottom: 1px solid var(--text-primary);
 }
 
 .markdown-body a:hover {
-  opacity: .6;
+  border-bottom: 2px solid var(--text-primary);
   text-decoration: unset;
 }
 
