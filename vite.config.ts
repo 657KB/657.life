@@ -93,7 +93,7 @@ export default defineConfig({
       },
       frontmatterPreprocess: (frontmatter, options, id, defaults) => {
         (() => {
-          if (!id.includes('/posts') && !id.endsWith('.md')) return
+          if (!id.includes('/posts')) return
           if (basename(id, '.md') === 'index') return
           frontmatter.readingTime = readingTime(readFileSync(id).toString())
         })()
