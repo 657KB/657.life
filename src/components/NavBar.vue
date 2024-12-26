@@ -39,7 +39,7 @@ function toggleMenu() { state.open = !state.open }
         :style="{
           opacity: '0',
           animation: state.open ? 'nav-item-anim ease .16s forwards' : null,
-          animationDelay: `${(index + 1.6) * 0.1}s`,
+          animationDelay: `${(index + 1.6) * 0.06}s`,
         }"
         :to="path"
       >
@@ -78,7 +78,7 @@ function toggleMenu() { state.open = !state.open }
 @keyframes nav-item-anim {
   from {
     opacity: 0;
-    transform: translate3d(-20%, 0, 0);
+    transform: translate3d(0, -10%, 0);
   }
 
   to {
