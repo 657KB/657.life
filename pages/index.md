@@ -1,8 +1,12 @@
 # Hi
 
-I am `657`, a software developer from China. 657 is a homophone of my name in Chinese.
+I am 657, a software developer from China. "657" is a homophone of my name in Chinese.
 
-You can contact me by sending an email to kuyermqi@outlook.com. Sometimes I use "Kuyermqi" as my username. "Kuyermqi" is a coined word derived by applying a simple rail fence cipher to the pinyin of my Chinese name. It's unique—though a bit childish, I think it's pretty cool.
+Sometimes I use "kuyermqi" as my username. "kuyermqi" is a coined word derived by applying a simple rail fence cipher to the pinyin of my Chinese name.
+
+You can contact me by sending an email to kuyermqi@outlook.com.
+
+Find me on [X / Twitter](https://x.com/657KB)、[Github](https://github.com/657KB)、[NeoDB](https://neodb.social/users/kuyermqi/).
 
 <div>
   <img
