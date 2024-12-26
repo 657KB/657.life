@@ -10,6 +10,8 @@ const { frontmatter } = defineProps({
     required: true,
   },
 })
+
+document.title = frontmatter.title
 </script>
 
 <template>

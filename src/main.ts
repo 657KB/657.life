@@ -16,6 +16,9 @@ export const createApp = ViteSSG(App, { routes }, ({ app, router, isClient }) =>
   if (isClient) {
     router.beforeEach(() => { Nprogress.start() })
     router.afterEach(() => { Nprogress.done() })
+    router.afterEach(() => {
+      document.title = `657's Life`
+    })
   }
 })
 

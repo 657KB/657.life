@@ -7,9 +7,9 @@ import IconMenu from './IconMenu.vue'
 const state = reactive({ open: false })
 const paths = ['/', '/portfolio', '/photos', '/posts']
 
-function firstCharUpperCase(str: string) {
+function removeFirstChar(str: string) {
   if (str.length < 1) return
-  return str[1].toUpperCase() + str.slice(2)
+  return str.slice(1)
 }
 
 function toggleMenu() { state.open = !state.open }
@@ -17,15 +17,8 @@ function toggleMenu() { state.open = !state.open }
 
 <template>
   <nav class="relative">
-    <!-- Navigation bar for mobile phone -->
     <div
-      class="fixed top-0 left-0 bottom-0 right-0 bg-black opacity-0 pointer-events-none data-[open=true]:pointer-events-auto dark:data-[open=true]:opacity-40 data-[open=true]:opacity-10"
-      :style="{ transition: 'all ease .3s' }"
-      :data-open="state.open"
-      @click="toggleMenu"
-    />
-    <div
-      class="absolute top-full left-0 right-0 px-6 pt-2 pb-6 flex flex-col space-y-6 bg-[--bg]"
+      class="absolute top-full left-0 right-0 px-6 pt-2 pb-6 flex flex-col space-y-6 bg-[--bg] uppercase"
       :style="{
         opacity: state.open ? '1' : '0',
         transform: state.open ? 'translate3d(0, 0, 0)' : 'translate3d(0, -100%, 0)',
@@ -43,25 +36,21 @@ function toggleMenu() { state.open = !state.open }
         }"
         :to="path"
       >
-        {{ path === '/' ? 'Home' : firstCharUpperCase(path) }}
+        {{ path === '/' ? 'Home' : removeFirstChar(path) }}
       </RouterLink>
     </div>
 
-    <!-- Navigation bar for PC -->
     <div class="flex flex-row items-center px-4 py-4 sm:px-10 sm:py-8 bg-[--bg] relative z-10">
       <div class="block sm:hidden cursor-pointer " @click="toggleMenu">
         <IconMenu />
       </div>
       <div class="flex-1"></div>
       <div class="flex flex-row space-x-8 items-center font-sans uppercase">
-        <RouterLink
-          v-for="path in paths"
-          :key="path"
-          class="hidden sm:block hover:opacity-60 "
-          :to="path"
-        >
-          {{ path === '/' ? 'Home' : firstCharUpperCase(path) }}
-        </RouterLink>
+        <template v-for="path in paths" :key="path">
+          <RouterLink class="hidden sm:block hover:opacity-60" :to="path">
+            {{ path === '/' ? 'HOME' : removeFirstChar(path) }}
+          </RouterLink>
+        </template>
         <a class="hover:opacity-60 " href="https://x.com/657KB" title="X / Twitter">
           <IconTwitter />
         </a>
@@ -71,7 +60,6 @@ function toggleMenu() { state.open = !state.open }
       </div>
     </div>
   </nav>
-
 </template>
 
 <style lang="css">
