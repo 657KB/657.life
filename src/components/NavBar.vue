@@ -77,10 +77,6 @@ function toggleMenu() { state.open = !state.open }
 </template>
 
 <style lang="css">
-.logo {
-  font-family: monospace;
-  font-style: normal;
-}
 .logo:hover {
   color: var(--primary-color);
 }
