@@ -18,7 +18,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 150%;
   min-width: 280px;
   color: var(--text-primary);
@@ -27,24 +27,24 @@ html {
 }
 
 /* Scroll bar */
-html::-webkit-scrollbar {
-  width: 10px;
+*::-webkit-scrollbar {
+  width: 4px;
 }
 
-html::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 10px;
+  border-radius: 999px;
 }
 
-html::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: rgb(136, 136, 136);
 }
 
-html::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
   background: rgb(100, 100, 100);
 }
 
-html::-webkit-scrollbar-thumb:active {
+*::-webkit-scrollbar-thumb:active {
   background: rgb(68, 68, 68);
 }
 

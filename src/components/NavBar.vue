@@ -52,8 +52,8 @@ function toggleMenu() { state.open = !state.open }
         <div class="block sm:hidden cursor-pointer " @click="toggleMenu">
           <IconMenu />
         </div>
-        <RouterLink class="logo hidden sm:block" to="/">
-          「 657's Life 」
+        <RouterLink class="logo hidden font-semibold sm:block grayscale hover:grayscale-0" to="/">
+          🏠
         </RouterLink>
         <div class="flex-1"></div>
         <div class="flex flex-row space-x-8 items-center uppercase">
