@@ -46,10 +46,10 @@ function toggleMenu() { state.open = !state.open }
       </RouterLink>
     </div>
 
-    <div class="relative px-6 py-8 sm:px-10 bg-[--bg] z-10">
+    <div class="relative p-6 sm:px-10 sm:py-8 bg-[--bg] z-10">
       <div class="max-w-[680px] mx-auto">
       <div class="flex flex-row items-end">
-        <div class="block sm:hidden cursor-pointer " @click="toggleMenu">
+        <div class="block sm:hidden cursor-pointer translate-x-[-5px]" @click="toggleMenu">
           <IconMenu />
         </div>
         <RouterLink class="logo hidden font-semibold sm:block grayscale hover:grayscale-0" to="/">
