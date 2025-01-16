@@ -1,3 +1,11 @@
+# react-color4bg
+
+`React` `Typescript`
+
+React component wrapper of [color4bg.js](https://www.color4bg.com/) written in TypeScript.
+
+[Github](https://github.com/657KB/react-color4bg)
+
 # mihomo-tray
 
 `Gnome Extension` `Javascript`
