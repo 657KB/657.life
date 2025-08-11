@@ -10,6 +10,8 @@ lang: 'en'
 
 > [!NOTE]
 > This is a practice piece; all content is fictional.
+>
+> This article was translated by ChatGPT.
 
 Mungstern is most famous for its local coffee. Unlike ordinary coffee, it is not made from coffee beans. Instead, the people of Mungstern use the seeds of papa grass, a plant that grows only in this region, to make Mungstern coffee.
 
