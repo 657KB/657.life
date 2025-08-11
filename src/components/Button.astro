@@ -130,4 +130,9 @@ window.matchMedia('(prefers-color-scheme: dark)')
     // Apply system theme preference
     applyTheme(isDark)
   })
+
+const theme = sessionStorage.getItem('theme');
+if (!theme) {
+  applyTheme(window.matchMedia('(prefers-color-scheme: dark)'));
+}
 </script>
