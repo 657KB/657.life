@@ -9,6 +9,7 @@ tags:
   - QuickJS
 draft: false
 lang: 'en'
+abbrlink: 'how-to-use-quick-js-in-flutter'
 ---
 
 > [!Note]

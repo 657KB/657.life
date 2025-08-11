@@ -6,6 +6,7 @@ tags:
   - 短篇
 draft: false
 lang: 'zh-tw'
+abbrlink: mungstern-coffee
 ---
 
 > [!NOTE]

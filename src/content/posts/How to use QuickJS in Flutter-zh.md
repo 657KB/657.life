@@ -9,6 +9,7 @@ tags:
   - QuickJS
 draft: false
 lang: 'zh'
+abbrlink: 'how-to-use-quick-js-in-flutter'
 ---
 
 ## 1. QuickJS 介绍
