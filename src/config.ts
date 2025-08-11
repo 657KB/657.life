@@ -6,9 +6,9 @@ export const themeConfig: ThemeConfig = {
     // site title
     title: '657\'s Life',
     // site subtitle
-    subtitle: 'May the force be with you',
+    subtitle: '空山无人，水流花开',
     // site description
-    description: 'This is my personal website',
+    description: '这是我的个人网站，用于记录我在井底看到的天空',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
     i18nTitle: true, // true, false
     // author name
