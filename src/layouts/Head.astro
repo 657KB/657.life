@@ -105,9 +105,9 @@ const pageImage = postSlug
 >
 (function () {
   // Check if current theme is dark
-  // Priority: localStorage theme > default theme > system preference
+  // Priority: sessionStorage theme > default theme > system preference
   function isDarkMode() {
-    const currentTheme = localStorage.getItem('theme')
+    const currentTheme = sessionStorage.getItem('theme')
     if (currentTheme) {
       return currentTheme === 'dark'
     }

@@ -81,7 +81,7 @@ function applyTheme(isDark) {
     metaThemeColor.setAttribute('content', isDark ? darkMode : lightMode)
   }
 
-  localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  sessionStorage.setItem('theme', isDark ? 'dark' : 'light')
   document.dispatchEvent(new Event('theme-changed'))
 }
 
