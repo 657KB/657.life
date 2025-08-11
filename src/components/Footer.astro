@@ -2,7 +2,7 @@
 import { defaultLocale, themeConfig } from '@/config'
 import { getLangFromPath } from '@/i18n/lang'
 
-const { author } = themeConfig.site
+const { title } = themeConfig.site
 const { links: socialLinks, startYear } = themeConfig.footer
 
 const currentYear = new Date().getFullYear()
@@ -29,16 +29,17 @@ const footerLinkClass = 'highlight-hover py-0.8 transition-colors after:bottom-0
   class="text-3 leading-1.25em font-navbar lg:text-3.5"
   lg="uno-desktop-column bottom-20"
 >
-  <p>
+  <p class="mb-2 text-3.65">
     {links.map((link, index) => (
       <>
-        <a class={footerLinkClass} href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a>&nbsp;{index < links.length - 1 && '/'}
+        <a class={footerLinkClass} href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a>
+        {index < links.length - 1 && <span class="mx-1">/</span>}
       </>
     ))}
   </p>
 
   <p>
-    © {year} {author}
+    © {year} {title}
   </p>
 
   <p>
