@@ -26,28 +26,16 @@ export const themeConfig: ThemeConfig = {
     // default theme mode
     mode: 'light', // light, dark, auto
     light: {
-      // primary color
-      // used for title, hover, etc
-      // oklch color picker: https://oklch.com/
-      primary: 'oklch(25% 0.005 298)',
-      // secondary color
-      // used for post text
-      secondary: 'oklch(40% 0.005 298)',
-      // background color
-      background: 'oklch(96% 0.005 298)',
-      // highlight color
-      // used for navbar, selected text, etc
-      highlight: 'oklch(0.6316 0.1355 253.73 / 0.5)', // rgba(73, 140, 217, 0.5)
+      primary: 'oklch(0.25 0.03 211.86)',
+      secondary: 'oklch(0.40 0.03 211.86)',
+      background: 'oklch(0.99 0.0039 106.47)',
+      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)',
     },
     dark: {
-      // primary color
-      primary: 'oklch(92% 0.005 298)',
-      // secondary color
-      secondary: 'oklch(77% 0.005 298)',
-      // background color
-      background: 'oklch(22% 0.005 298)',
-      // highlight color
-      highlight: 'oklch(0.6317 0.1352 253.47 / 0.2)', // rgba(73, 140, 217, 0.2)
+      primary: 'oklch(0.92 0.0015 106.47)',
+      secondary: 'oklch(0.79 0.0015 106.47)',
+      background: 'oklch(0.24 0.0039 106.47)',
+      highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)',
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
