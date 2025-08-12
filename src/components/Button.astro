@@ -133,6 +133,6 @@ window.matchMedia('(prefers-color-scheme: dark)')
 
 const theme = sessionStorage.getItem('theme');
 if (!theme) {
-  applyTheme(window.matchMedia('(prefers-color-scheme: dark)'));
+  applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
 }
 </script>
