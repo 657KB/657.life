@@ -61,7 +61,7 @@ function getPostPath(post: Post) {
 
       {/* mobile post time */}
       <div
-        class="py-0.8 text-3.5 font-time lg:hidden"
+        class="py-0.8 text-3.5 font-mono lg:hidden"
         transition:name={`time-${post.data.abbrlink || post.id}${lang ? `-${lang}` : ''}`}
         data-disable-theme-transition
       >
@@ -72,7 +72,7 @@ function getPostPath(post: Post) {
       </div>
 
       {/* desktop post time */}
-      <div class="hidden text-3.45 font-time opacity-60 lg:(ml-2.5 inline)">
+      <div class="hidden text-3.45 font-mono opacity-60 lg:(ml-2.5 inline)">
         <PostDate
           date={post.data.published}
           minutes={post.remarkPluginFrontmatter.minutes}
