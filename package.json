@@ -59,7 +59,7 @@
     "lint-staged": "^16.1.5",
     "ndarray-pixels": "^5.0.1",
     "simple-git-hooks": "^2.13.1",
-    "tsx": "^4.20.3",
+    "tsx": "^4.20.4",
     "typescript": "~5.9.2",
     "unocss": "66.4.2",
     "unocss-preset-theme": "^0.14.1"
